@@ -1,0 +1,72 @@
+/* global  style*/
+*{margin:0; padding:0; font-family : 'Nanum Gothic', sans-serif;}
+a{color:#000; text-decoration:none;}
+ul{list-style:none;}
+
+/* Custom style*/
+
+#wrapper{width:100%;  max-width:1200px; margin:0 auto;}
+#header{text-align:center; padding:60px 0; }
+#header a{font-size:40px;  font-weight:bold; color:#fff; }
+
+#nav{background:rgb(55,55,55);  overflow:hidden; }
+#nav a{background:rgb(55,55,55);color:#fff; display:inline-block; padding:15px; height:100%;} 
+
+#nav ul{list-style:none; }
+#nav li.active a{background:#fff; color:rgb(55,55,55);}
+#nav li a:hover{background:#fff; color:rgb(55,55,55); opacity:0.5;}
+
+#nav ul.menus{float:left;}
+#nav ul.icons{float:right;}
+#nav ul li{float:left;}
+
+#main{background:#fff;padding:50px;}
+#main .featured header h2{text-align:center;  padding: 20px 0 30px;font-size:30px;}
+#main .featured header a img{width:100%;}
+#main .featured p{padding:40px 0 30px; line-height:1.2em;}
+
+#footer {display:flex;background:#fff; padding:50px; } 
+/* 부모태그에  display:flex설정하고 자식태그에 
+   flex:1란 2개의 영역으로 두개의 영역  1:1 비율로 설정하라.
+   flex:2란 2개의 영역에 왼쪽영역은 3분의 1 왼쪽은 3분의 2값을 갖는다.*/
+#footer .contact, #footer .info{flex:1; }
+#footer .contact .inputs{ padding:10px;}
+#footer .contact .inputs label{display:block;margin-bottom:5px;}
+#footer .contact .inputs input{
+    width:90%; 
+    box-sizing:border-box; 
+    padding:7px; 
+    border:3px solid grey;
+    margin-bottom:20px;
+    background-color:#ddd;}
+#footer .contact .inputs textarea{
+        width:90%; 
+        border:solid 3px grey; 
+        box-sizing:border-box; 
+        margin-bottom:20px;
+        background-color:#ddd;}
+ #footer .contact .submit{padding:0 10px;}
+#footer .contact .submit input {
+    border:3px solid #333;
+        border:solid 3px grey; 
+        padding:20px;}
+
+#footer .info {padding:10px;}
+#footer .info section{display:flex;padding:10px 0;}
+#footer .info section h3{flex:1;}
+#footer .info section p{flex:2;}
+#footer .info section ul{flex:2;}
+#footer .info section ul li{display:inline-block;}
+
+#copyright{background:#333; color:#ccc; text-align: center; padding:30px 0;}
+#copyright a{color:#ccc;}
+
+.bg{ 
+    position:fixed;
+    top:0; left:0;
+    width:100vw;
+    height:100vh;
+    background:url(../images/background.png) no-repeat center center;
+    z-index: -1;
+    opacity:0.8;
+}
